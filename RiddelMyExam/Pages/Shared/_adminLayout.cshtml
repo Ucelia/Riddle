@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>Dashboard Example</title>
+  
+</head>
+<body>
+    
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Navigation Column -->
+                <div class="col-md-3 bg-dark text-light">
+                    <h2>ADMIN Dashboard </h2>
+                    <!-- Add your navigation links or menu items here -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Riddlepage">Riddles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Question">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Canditate">Candidates</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        @RenderBody()
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.csproj.AssemblyReference.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.AssemblyInfoInputs.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.AssemblyInfo.cs
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.csproj.CoreCompileInputs.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.RazorAssemblyInfo.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL_EXAM_PROJECT.RazorAssemblyInfo.cs

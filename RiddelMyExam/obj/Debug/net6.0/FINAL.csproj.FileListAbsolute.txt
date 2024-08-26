@@ -1,0 +1,16 @@
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.csproj.AssemblyReference.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.AssemblyInfoInputs.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.AssemblyInfo.cs
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.csproj.CoreCompileInputs.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.RazorAssemblyInfo.cache
+C:\Users\Celia\Desktop\RiddelMyExam\obj\Debug\net6.0\FINAL.RazorAssemblyInfo.cs
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.csproj.AssemblyReference.cache
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.AssemblyInfoInputs.cache
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.AssemblyInfo.cs
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.csproj.CoreCompileInputs.cache
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.MvcApplicationPartsAssemblyInfo.cache
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.RazorAssemblyInfo.cache
+D:\AUCA\sem VI\.Net\RiddelMyExam\obj\Debug\net6.0\FINAL.RazorAssemblyInfo.cs

@@ -1,0 +1,103 @@
+﻿@page
+@model RiddelMyExam.Pages.questioneModel
+@{
+}
+
+
+<style>
+    .container-border {
+        border: 2px solid #ddd; /* Add your preferred border color */
+        border-radius: 10px; /* Add border-radius for rounded corners */
+        padding: 30px; /* Add padding for spacing inside the container */
+        margin-top: 20px; /* Add margin for spacing between the container and other elements */
+    }
+</style>
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning">
+        @Model.errorMessage
+
+    </div>
+}
+<div class="container container-border">
+    <!-- Form Column -->
+    <<div class="col-md-6">
+        <form method="post">
+
+            <div class="form-group">
+                <label for="Riddle">Riddle</label>
+                <select class="form-control" id="riddles" name="riddle_id">
+                    <option value="">Select Riddle type</option>
+                    @foreach (var item in Model.riddlelist)
+                    {
+                        <option value="@item.riddel_id">@item.riddel_name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group row">
+                <label for="question1" class="col-sm-4 col-form-label">Question:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="question1" name="question" placeholder="Enter Question ">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="question4" class="col-sm-4 col-form-label">Correct:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="Option3" name="correct" placeholder="Enter correct option">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Table Column -->
+        <div class="col-md-6">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Question ID</th>
+                        <th scope="col">Riddle Id </th>
+                        <th scope="col">Question </th>
+                        <th scope="col">Option 1</th>
+                        <th scope="col">Option 2
+                        <th>
+                        <th scope="col">Option 3</th>
+                        <th scope="col">Correct</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add your table rows here -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

@@ -1,0 +1,84 @@
+﻿@page
+@model RiddelMyExam.Pages.candidateModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate's View</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Candidate's View</h2>
+        @if(HttpContext.Session.GetInt32("_id")!=null)
+        {
+
+        @if (Model.Questions != null && Model.Questions.Count > 0)
+        {
+            
+                @foreach (var question in Model.Questions)
+                {
+                    <form method="post">
+                    <div class="question-container">
+                            <p><b>Riddle :</b>@question.qst</p>
+                        <div>
+                                <input type="text" name="questionIDD" value="@question.id">
+                            <label for="answerDropdown">Select an answer:</label>
+                            <select id="answerDropdown" name="answer" class="answerDropdown">
+                                <option value="1">@question.opt1</option>
+                                <option value="2">@question.opt2</option>
+                                <option value="3">@question.opt3</option>
+                            </select>
+                            <input type="hidden" id="answer" name="correct" class="answer" value="@question.correct">
+                        </div>
+                    </div>
+                        <button type="submit">Submit</button> <br /><br />
+                    </form>
+                }
+
+
+                <button type="submit" formaction="/candidate?handler=GeneratePdf" formmethod="post">Generate PDF</button>
+            }
+            else
+            {
+                <p class="h4"> no more questions</p>
+            
+            }
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                @Model.ErrorMessage
+            </div>
+                }
+        }
+        else
+        {
+         <p class=" h4">Login to do the riddles</p>   
+        }
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+﻿@page
+@model RiddelMyExam.Pages.QuestionModel
+@{
+    //Layout = "_adminLayout";
+}
+
+
+<style>
+    .container-border {
+        border: 2px solid #ddd; /* Add your preferred border color */
+        border-radius: 10px; /* Add border-radius for rounded corners */
+        padding: 30px; /* Add padding for spacing inside the container */
+        margin-top: 20px; /* Add margin for spacing between the container and other elements */
+    }
+</style>
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning">
+        @Model.errorMessage
+    </div>
+}
+<div class="container container-border">
+    <div class="row">
+        <!-- Form Column -->
+        <div class="col-md-6">
+            <form method="post">
+
+                <div class="form-group">
+                    <label for="Riddle">Riddle</label>
+                    <select class="form-control" id="riddles" name="riddle_id">
+                        <option value="">Select Riddle type</option>
+                        @foreach (var item in Model.riddlelist)
+                        {
+                            <option value="@item.riddel_id">@item.riddel_name</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group row">
+                    <label for="question1" class="col-sm-4 col-form-label">Question:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="question1" name="question" placeholder="Enter Question ">
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label for="question2" class="col-sm-4 col-form-label">Option 1:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="question2" name="Option1" placeholder="Enter Option 1 ">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="question3" class="col-sm-4 col-form-label">Option 2:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id=">Option2" name="Option2" placeholder="Enter Option 2">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="question4" class="col-sm-4 col-form-label">Option 3:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id=">Option3" name="Option3" placeholder="Enter Option 3">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="question4" class="col-sm-4 col-form-label">Correct:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id=">Option3" name="correct" placeholder="Enter correct option">
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Table Column -->
+        <div class="col-md-6">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Question ID</th>
+                        <th scope="col">Riddle Id </th>
+                        <th scope="col">Question </th>
+                        <th scope="col">Option 1</th>
+                        <th scope="col">Option 2</th>
+                        <th scope="col">Option 3</th>
+                        <th scope="col">Correct</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.riddlelist)
+                    {
+                        <tr>
+                            <td>@item.id</td>
+                            <td>@item.qst</td>
+                            <td>@item.opt1</td>
+                            <td>@item.opt2</td>
+                            <td>@item.opt3</td>
+                            <td>@item.correct</td>
+
+                            <td>
+                                <a class="btn btn-primary btn-sm" href="RR/EditRiddle?id=@item.id">Edit</a>
+                                <a class="btn btn-danger btn-sm" href="RR/DeleteRiddle?id=@item.id">Delete</a>
+                            </td>
+                        </tr>
+
+                    }
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
